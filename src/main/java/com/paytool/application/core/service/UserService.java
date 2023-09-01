@@ -1,7 +1,9 @@
-package com.paytool.domain.service;
+package com.paytool.application.core.service;
 
-import com.paytool.domain.models.User;
-import com.paytool.domain.ports.inbound.UserPort;
+import com.paytool.application.core.domain.models.User;
+import com.paytool.application.ports.inbound.UserPort;
+
+import java.util.UUID;
 
 public class UserService {
 
@@ -15,7 +17,7 @@ public class UserService {
         return userPort.saveUser(user);
     }
 
-    public User getUserById(Long id) {
+    public User getUserById(UUID id) {
         return userPort.getUserById(id);
     }
 
@@ -27,12 +29,8 @@ public class UserService {
         return userPort.getUserByEmail(email);
     }
 
-    public String deleteUser(Long id) {
+    public String deleteUser(UUID id) {
         userPort.deleteUser(id);
         return "Successfully deleted user";
-    }
-
-    public User updateUser(User user) {
-        return userPort.updateUser(user);
     }
 }
