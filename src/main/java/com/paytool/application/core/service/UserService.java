@@ -3,6 +3,7 @@ package com.paytool.application.core.service;
 import com.paytool.application.core.domain.models.User;
 import com.paytool.application.ports.inbound.UserPort;
 
+import java.util.List;
 import java.util.UUID;
 
 public class UserService {
@@ -16,6 +17,8 @@ public class UserService {
     public User saveUser(User user) {
         return userPort.saveUser(user);
     }
+
+    public List<User> getUsers() { return userPort.getUsers(); }
 
     public User getUserById(UUID id) {
         return userPort.getUserById(id);
