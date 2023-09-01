@@ -1,9 +1,9 @@
-package com.paytool.domain.service;
+package com.paytool.application.core.service;
 
-import com.paytool.domain.models.TransferOperation;
-import com.paytool.domain.ports.inbound.TransferOperationPort;
-import com.paytool.domain.ports.outbound.TransferAuthorizerPort;
-import com.paytool.domain.ports.outbound.TransferNotificationPort;
+import com.paytool.application.core.domain.models.TransferOperation;
+import com.paytool.application.ports.inbound.TransferOperationPort;
+import com.paytool.application.ports.outbound.TransferAuthorizerPort;
+import com.paytool.application.ports.outbound.TransferNotificationPort;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,6 @@
-package com.paytool.domain.ports.inbound;
+package com.paytool.application.ports.inbound;
 
-import com.paytool.domain.models.TransferOperation;
+import com.paytool.application.core.domain.models.TransferOperation;
 
 public interface TransferOperationPort {
 

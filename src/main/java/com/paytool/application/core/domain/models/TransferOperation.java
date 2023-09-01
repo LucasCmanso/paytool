@@ -1,6 +1,6 @@
-package com.paytool.domain.models;
+package com.paytool.application.core.domain.models;
 
-import com.paytool.domain.enums.TransferOperationStatus;
+import com.paytool.application.core.domain.enums.TransferOperationStatus;
 
 import java.math.BigDecimal;
 import java.util.Date;
